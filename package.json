@@ -1,0 +1,26 @@
+{
+  "name": "npm-package-config-issue",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "config": {
+    "port": "3000"
+  },
+  "scripts": {
+    "override-from-package": "npm_package_config_test=test npm_package_config_port=3001 NODE_ENV=test node index.js",
+    "override-from-env": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lutangar/npm-package-config-issue.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lutangar/npm-package-config-issue/issues"
+  },
+  "homepage": "https://github.com/lutangar/npm-package-config-issue#readme",
+  "dependencies": {
+    "assert": "^1.4.1"
+  }
+}
